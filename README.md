@@ -1,3 +1,5 @@
+![dynamic badge for workflows](https://github.com/Samyak0-0/cicd/actions/workflows/ci.yml/badge.svg)
+
 # learn-cicd-typescript-starter (Notely)
 
 This repo contains the typescript starter code for the "Notely" application for the "Learn CICD" course on [Boot.dev](https://boot.dev).
