@@ -7,7 +7,7 @@ on:
 jobs:
   deploy:
     name: Deploy
-runs-one: ubuntu-latest
+    runs-one: ubuntu-latest
 
     steps:
       - name: Checkout the code
