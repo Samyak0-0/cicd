@@ -1,0 +1,25 @@
+name: cd
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Deploy
+runs-one: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Setup the Node Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install the Dependencies
+        run: npm ci
+
+      - name: Build the Application
+        run: npm run build
